@@ -55,6 +55,10 @@ function createInput(){
     let inputVal = document.getElementById("item").value;
     var add = document.querySelector(".task-list");
     var createElement = document.createElement("li");
-    createElement.innerHTML = "<span>"+inputVal+"</span><button>Αφαίρεση</button>";
+    createElement.innerHTML = "<span>"+inputVal+"</span><button onclick='markAsDone(this)'>Αφαίρεση</button>";
     add.appendChild(createElement);
+}
+
+function markAsDone(button) {
+    button.parentNode.classList.add("done");
 }

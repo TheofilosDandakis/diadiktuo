@@ -16,21 +16,16 @@
          <ul class="task-list">
             <li>
                <span>Να λύσω ξανά την άσκηση αυτή την επόμενη εβδομάδα, που θα ξέρω πώς χειριζόμαστε τα συμβάντα</span>
-               <button>Αφαίρεση</button>
+               <button onclick="markAsDone(this)">Αφαίρεση</button>
             </li>
-            <li class="done"><span>Να πάρω τα χάπια μου</span><button>Αφαίρεση</button></li>
-            <li><span>Να διαβάσω JS</span><button>Αφαίρεση</button></li>
-            <li class="done"><span>Να ταΐσω τη γάτα</span><button>Αφαίρεση</button></li>
-            <li><span>Να μαγειρέψω</span><button>Αφαίρεση</button></li>
+            <li class="done"><span>Να πάρω τα χάπια μου</span><button onclick="markAsDone(this)">Αφαίρεση</button></li>
+            <li><span>Να διαβάσω JS</span><button onclick="markAsDone(this)">Αφαίρεση</button></li>
+            <li class="done"><span>Να ταΐσω τη γάτα</span><button onclick="markAsDone(this)">Αφαίρεση</button></li>
+            <li><span>Να μαγειρέψω</span><button onclick="markAsDone(this)">Αφαίρεση</button></li>
          </ul>
          <div class="statistics">Σύνολο: <span class="total">0</span></div>
          <div class="statistics">Δεν έχουν ολοκληρωθεί: <span class="left-todo">0</span></div>
       </div>
-      <script>
-         button.onclick = function() {
-            const taskSpans = document.querySelectorAll('.task-list li span');
-            taskSpans.parentNode.classList.add("done");
-         }
-       </script>
    </body>
 </html>
+
