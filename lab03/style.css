@@ -1,0 +1,108 @@
+/* Μην κάνετε αλλαγές στα παρακάτω */
+body {
+	margin: 0;
+}
+html {
+	font-family: Arial, 'sans serif';
+	background-color: #323c41;
+}
+
+/** Για τις ερωτήσεις 1.1, 1.2, 1.3 **/
+.recipe{
+	width: 35em;
+	height: 22em;
+	margin: 5em auto;
+	background-color: #144141;
+	border: 0.2em solid black;
+}
+.recipe footer{
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+.recipe header{
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+/* Γράψτε την απάντηση σε κάθε μια από τις ερωτήσεις */
+/* 2.1 */
+:root{
+	font-size: 10px;
+}
+/* 2.3 */
+.recipe header, .recipe footer {
+	line-height: 2.5;
+}
+/* 2.4 */
+h2 ,p{
+	margin: 0em;
+}
+/* 2.5 */
+h2, p {
+    color: rgba(255, 255, 255, 0.8);
+}
+/* 2.6 */
+.article {
+	height: 12em;
+}
+/* 2.7 */
+h2 {
+	font-size: 2em;
+}
+/* 2.8 */
+.recipe header h2 {
+	line-height: 1.4em;
+}
+/* 2.9 */
+.recipe footer {
+	display: flex;
+}
+/* 2.10 */
+.recipe footer::after {
+	content: '';
+	margin-left: 18em;
+}
+.recipe footer p:first-child {
+	margin-right: auto;
+}
+/* 2.11 */
+.recipe footer p {
+	font-size: 1.5em;
+	line-height: 5em;
+}
+/* 2.12 */
+p{
+	font-size: 1.4em;
+}
+/* 2.13 */
+.recipe {
+	background-image: url('s_minestrone.png');
+	background-size: cover;
+	background-position: center;
+}
+/* 2.14 */
+.recipe article {
+	background-color :rgba(0, 0, 0, 0.5);
+}
+/* 2.15 */
+.recipe header,.recipe footer, .recipe article {
+	padding: 5px 10px;
+}
+/* 2.16 */
+.recipe header, .recipe footer {
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+.recipe article {
+	height: 120px;
+}
+/* 2.17 */
+hr{
+	width: 50%;
+	background-color: #D0BB57;
+	height: 0.3em;
+	margin: 0 auto;
+	border: none;
+}
+.separator{
+	background-color :rgba(0, 0, 0, 0.5);
+}

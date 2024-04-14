@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-color: #fceca4;
+}
+
+html {
+	font-family: Arial, 'sans serif';
+}
+
+.tasks{
+	width: 80%;
+	height: 100%;
+	margin: 2% auto;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3%;
+}
+
+.title{
+    font-size: 1.6em;
+    font-style: italic;
+    text-align: center;
+    font-weight:bold;
+    padding:6%
+}
+
+input{
+    font-style: italic;
+    margin:  1em auto;
+    text-align: center;
+    display: block;
+}
+
+.task-list {
+    list-style: none; 
+    padding: 0em 2em 2em 3em; 
+}
+
+#item {
+    border: none;
+    border-bottom: 0.1em dashed ; 
+}
+
+.task-list li {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.task-list li span {
+    border-radius: 0.25em;
+    flex: 1; 
+    margin-right: 0.5em; 
+}
+
+.task-list li button {
+    background-color: lightgrey;
+    cursor: pointer;
+    color:grey;
+    border-color: grey;
+}
+  
+.statistics {
+    text-align: right;
+    padding: 0 2em 0.5em 1em;
+}
+
+.done span{
+    text-decoration: line-through;
+    color: grey;
+}
