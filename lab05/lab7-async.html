@@ -37,6 +37,17 @@
                 gap: 2em;
                 transition: opacity 0.3s linear;
             }
+            .restart-button{
+                display: flex;
+                justify-content: center;
+            }
+            #restartButton{
+                border-radius: 10%;
+                border-color: rgb(100, 100, 100);
+                cursor: pointer;
+                font-size: 100%;
+                opacity: 0;
+            }
             img {
                 object-fit: fill;
                 width: 100%;
@@ -125,10 +136,12 @@
         // contains the core game logic
         //selectedCover is the cover that has just been clicked
         function playCard(selectedCover) {
+            //Restart button appears in first guess
+            const restartbtn=document.getElementById("restartButton");
+            restartbtn.style.opacity = 1;
             if (previouslySelectedCover == undefined) {
                 previouslySelectedCover = selectedCover
                 selectedCover.style.opacity = 0;
-                console.log( "1")
                 totalTries++;
             }
             else if(previouslySelectedCover == selectedCover)
@@ -170,16 +183,9 @@
             }
             return array;
         }
-    </script>
-    <script>
-        // Your script code goes here
-        // This script will be executed when the page loads initially
-        // Function to execute when the "Restart Script" button is clicked
         function restartScript() {
-            // Reload the page to restart the script from the beginning
             location.reload();
         }
-        // Bind the restartScript function to the click event of the button
         document.getElementById("restartButton").addEventListener("click", restartScript);
     </script>
 </html>
